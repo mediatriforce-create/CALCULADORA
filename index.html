@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Calc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              neon: {
+                DEFAULT: '#FF6F00',
+                light: '#FF9E40',
+                dark: '#C43E00',
+                bg: '#1A1A1A',
+                panel: '#222222'
+              }
+            },
+            fontFamily: {
+              orbitron: ['Orbitron', 'sans-serif'],
+            },
+            boxShadow: {
+              'neon': '0 0 5px #FF6F00, 0 0 10px #FF6F00',
+              'neon-strong': '0 0 10px #FF6F00, 0 0 20px #FF6F00, 0 0 30px #FF6F00',
+              'neon-text': '0 0 2px #FF6F00',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #111;
+        color: white;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
